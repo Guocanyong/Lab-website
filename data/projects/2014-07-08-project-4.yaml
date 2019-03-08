@@ -1,0 +1,11 @@
+modalID: 5
+title: Detergents
+#subtitle: Lorem ipsum dolor sit amet consectetur.
+date: 2019-03-07
+img: Picture4.png
+preview: Picture4.png
+client: NMR Lab
+clientLink: "#"
+category: Research progress
+description: <p align="left"><font size="4" >Detergents are membrane mimics  that have so far been used for most in vitro  studies of membrane proteins (MPs). Given that  fragile     MPs that are reconstituted in conventional detergents tend to either lose their native-like states or manifest unfavorable properties for structural and functional studies, there is a need for new, well-tuned detergents. We designed disulfide-containing detergents  (DCDs) for structural investigations of MPs. The convenient serial derivation by walking the  disulfide bridge along the hydrophobic chain of the traditional detergent n-dodecyl-β-D-maltoside (DDM) yielded a group of DCDs, all  of which were found to form smaller micelles  than DDM. Representative DCDs behaved well  in the refolding of the β-barrel protein OmpX,  and in the solubilization and stabilization of GPCRs. The novel characteristics of DCD’s yielded outstanding performance in solution NMR studies of MPs, as demonstrated by the collection and assignment of 2D [15N,1H]-TROSY spectra of 15N-labeled OmpX, and by 19F-NMR studies of A2AAR. Molecular dynamics simulations indicated that the bent disulfide bond provides DCDs with a unique detergent geometry and, therefore, results in  distinct packing patterns and micelle properties. This alternative  design strategy for NMR  studies of MPs is an important step  for future detergent development.<p><font>
+

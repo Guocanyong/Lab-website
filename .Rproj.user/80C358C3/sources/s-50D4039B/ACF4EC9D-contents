@@ -1,0 +1,384 @@
+# Site settings
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Agency"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Your name"
+  description = "Your description"
+  # email = "your@email.com"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "NMR Lab"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    #services = "Services"
+    portfolio = "Research"
+    about = "Publication"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://www.shanghaitech.edu.cn"
+      name = "External link"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    #title = "Welcome To Our Studio!"
+    #subtitle = "It's nice to meet you"
+    buttonText = "Enter"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Research Focus"
+    subtitle = """<p align="left"><font size="5" color="black">Current research is focused on studies of human G protein-coupled receptors (GPCRs) and their interactions with orthosteric ligands and other allosteric effectors, as well as with their intracellular partner proteins. The human proteome contains 826 different GPCRs, which play key roles in a large array of physiological processes.  The functions of GPCRs are thus key elements in human health and disease, and are of keen interest as targets for drug development. Many of the ligands used in our studies are either approved drugs, or lead compounds from past or presently ongoing searches for new or improved drugs. The primary technique used by our group is nuclear magnetic resonance (NMR) spectroscopy.  Since NMR studies can be pursued in aqueous solutions at ambient temperature or body temperature, this technique can provide complimentary data to those obtained by other methods of structural biology, in particular X-ray crystallography and cryo-electron microscopy (cryo-EM). NMR information on intramolecular rate processes, local conformational polymorphisms and the kinetics of intermolecular interactions with ligands and partner proteins provides a basis for deeper understanding of the allosteric signaling mechanisms characteristic of GPCRs. Of special interest in our work is biased signaling, due to its promise to open new avenues for drug discovery and drug development.</font><p>"""
+
+    #[[params.services.row]]
+
+    #[[params.services.row.list]]
+      #icon = "fa-shopping-cart"
+      #title = "E-Commerce"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #url = "#"
+
+    #[[params.services.row.list]]
+      #icon = "fa-laptop"
+      #title = "Responsive Design"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #url = "#"
+
+    #[[params.services.row.list]]
+      #icon = "fa-lock"
+      #title = "Web"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Research"
+    #subtitle = "Recent Research progress"
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "Publication"
+    subtitle = """<p align="left"><font color="black"><br>1. Liu D, Wüthrich K (2016) Ring current shifts in 19F-NMR of membrane proteins. J Biomol NMR 65:1-5.<br>
+    <br>2. Hou Y, Hu W, Li X, Skinner JJ, Liu D, Wüthrich K  (2017) Solvent-accessibility of discrete residue positions  in the polypeptide hormone glucagon by 19F-NMR  observation of 4-fluorophenylalanine. J Biomol NMR  68:1-6.<br>
+    <br>3. Song G, Yang D, Wang Y, de Graaf C, Zhou Q, Jiang  S, Liu K, Cai X, Dai A, Lin G, Liu D, Wu F, Wu Y, Zhao  S, Ye L, Han GW, Lau J, Wu B, Hanson MA, Liu ZJ,  Wang MW, Stevens RC (2017) Human GLP-1  receptor transmembrane domain structure in complex  with allosteric modulators. Nature 546:312-315.<br>
+    <br>4. Pu M, Xu Z, Peng Y, Hou Y, Liu D, Wang Y, Liu H,  Song G, Liu ZJ (2018) Protein crystal quality oriented  disulfide bond engineering, Protein Cell 9(7):659-663.<br>
+    <br>5. Chen S, Lu M, Liu D, Yang L, Yi C, Ma L, Zhang H, Liu Q, Frimurer TM, Wang MW, Schwartz, TW, Stevens RC, Wüthrich K, Zhao Q (2019) Human substance P receptor binding mode of the antagonist drug aprepitant by NMR and crystallography. Nature communications, 10(1):638.<br><p><font>"""
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    #[[params.about.events]]
+      #img = "1.jpg"
+      #date = "2009-2011"
+      #title = "Our Humble Beginnings"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    #[[params.about.events]]
+      #img = "2.jpg"
+      #date = "March 2011"
+      #title = "An Agency is Born"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    #[[params.about.events]]
+      #img = "3.jpg"
+      #date = "December 2012"
+      #title = "Our Humble Beginnings"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    #[[params.about.events]]
+      #img = "4.jpg"
+      #date = "July 2014"
+      #title = "Phase Two Expansion"
+      #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Our team"
+    #subtitle = "Lorem ipsum dolor sit amet consectetur."
+    description = "Welcome to Join Our Team! Contact us at liudsh@shanghaitech.edu.cn"
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "1.jpg"
+      name = "Kurt Wüthrich"
+      position = "Ph.D., Distinguished Professor, PI, 2013–"
+      #reportsTo = "CTO"
+      #livesIn = "[Munich, Germany](#some-maps-url)"
+      #scope = [
+        #"UX for [member dashboard](#)",
+        #"Maintainer for [awesome-project](#)",
+        #"Open Source [community management](#)"
+      #]
+      # For bio markdown and even multiline strings are available.
+      #bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
+#She worked at Pied Piper for years until they went belly up."""
+      #social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      #]
+
+    [[params.team.members]]
+      img = "dongsheng.jpg"
+      name = "Liu Dongsheng 刘东升"
+      position = "Ph.D, Associate Professor, 2014–"
+      scope = ["liudsh@shanghaitech.edu.cn"]
+      #social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      #]
+
+    [[params.team.members]]
+      img = "yuanya.jpg"
+      name = "Yuan Ya 袁亚"
+      position = "Engineer, 2015-"
+      scope = ["yuanya@shanghaitech.edu.cn"]
+      #social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      #]
+    [[params.team.members]]
+      img = "lingyun.jpg"
+      name = "Yang Lingyun 杨凌云"
+      position = "Ph.D, NMR Facility Manager, 2016-"
+      scope = ["yangly@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "hu.jpg"
+      name = "Hu Wanghui 胡万辉"
+      position = "Ph.D, Post-Doc, 2015-"
+      scope = ["huwh@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "song.jpg"
+      name = "Song Yanzhuo 宋彦卓"
+      position = "Ph.D, Post-Doc, 2018-"
+      scope = ["songyzh@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "tiandan.jpg"
+      name = "Xu Tiandang 徐天丹"
+      position = "Graduate Student, 2014-"
+      scope = ["xutd@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "huixia.jpg"
+      name = "Wang huiXia 王慧霞"
+      position = "Graduate Student, 2015-"
+      scope = ["wanghx@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "yimei.jpg"
+      name = "Hao Yimei 郝依梅"
+      position = "Graduate Student, 2015-"
+      scope = ["haoym@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "benxun.jpg"
+      name = "Pan Benxun 潘本勋"
+      position = "Graduate Student, 2016-"
+      scope = ["panbx@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "dandan.jpg"
+      name = "Feng Dangdang 冯丹丹"
+      position = "Graduate Student, 2017-"
+      scope = ["fengdd@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "guanru.jpg"
+      name = "Feng Guanru 冯冠儒"
+      position = "Graduate Student, 2018-"
+      scope = ["fenggr@shanghaitech.edu.cn"]
+    [[params.team.members]]
+      img = "canyong.jpg"
+      name = "Guo Canyong 郭灿泳"
+      position = "Graduate Student, 2018-"
+      scope = ["guocy@shanghaitech.edu.cn"]
+    
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        #logo = "logo.png"
+        link = "#"
+
+      [[params.clients]]
+        logo = "logo1.png"
+        link = "http://www.shanghaitech.edu.cn/"
+
+      [[params.clients]]
+        logo = "logo2.png"
+        link = "http://ihuman.shanghaitech.edu.cn/index.php/Ihuman"
+
+      [[params.clients]]
+        #logo = "logo.png"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = false
+    title = "Contact us"
+    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    buttonText = "Send message"
+    # netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "your@email.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    #[params.contact.captcha]
+      # sitekey = ""
+
+    # 'warning' defines error messages for invalid inputs
+    #[params.contact.form.name]
+      #text = "Your Name *"
+      #warning = "Please enter your name."
+
+    #[params.contact.form.email]
+      #text = "Your Email *"
+      #warning = "Please enter your email address."
+
+    #[params.contact.form.phone]
+      #text = "Your Phone *"
+      #warning = "Please enter your phone number."
+
+    #[params.contact.form.message]
+      #text = "Your Message *"
+      #warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Copyright © 2018 NMR Laboratory"
+
+    #[[params.footer.social]]
+      #icon = "fa-twitter"
+      #link = "#"
+      #title = "Twitter"
+
+    #[[params.footer.social]]
+      #icon = "fa-facebook"
+      #link = "#"
+      #title = "Facebook"
+
+    #[[params.footer.social]]
+      #icon = "fa-linkedin"
+      #link = "#"
+      #title = "LinkedIn"
+
+    #[[params.footer.quicklinks]]
+      #text = "Privacy Policy"
+      #link = "#"
+
+    #[[params.footer.quicklinks]]
+      #text = "Terms of Use"
+      #link = "#"
